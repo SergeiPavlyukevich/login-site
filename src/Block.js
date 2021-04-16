@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 
+
+
+
 export const Block = ({ item, onClick }) => {
-  const [isActiveCard, setActiveCard] = useState(0);
-  const handleClick=()=>{
+  const [isActiveCard, setActiveCard] = useState(false);
+  const handleClick = () => {
     onClick();
-    setActiveCard(item)
+    setActiveCard(true)
   }
   return (
-    <div
-      name={isActiveCard}
-      onClick={handleClick}
-      className="block"
-    >
-      {isActiveCard ? isActiveCard: null}
+    <div onClick={handleClick} className="block">
+      {isActiveCard ? item: null}
     </div>
   );
 };

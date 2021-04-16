@@ -1,4 +1,4 @@
-.block {
+/* .block {
     width: 100px;
     height: 100px;
     border: 1px solid black;
@@ -9,4 +9,70 @@
     display: flex;
     flex-wrap: wrap;
     width: 210px;
+} */
+
+
+
+.loginWrapper {
+    display: flex;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.loginMainImg {
+    width: 50%;
+    background-image: url(more.jpg);
+}
+
+.loginBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#f0faf3;
+    width: 50%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    align-self: center;
+    width: 270px;
+    height: 180px;
+}
+
+input[type='text'] {
+    width: 220px;
+    height: 20px;
+}
+
+.lettering {
+    margin-left: 220px;
+    margin-top: 13px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    color:white;
+    background: #068ebf;
+    margin-left: 64px;
+    height: 25px;
+    width: 55px;
+}
+
+.checkAndLog {
+    display: flex;
+}
+
+.checkRemember {
+    margin-top: 3px;
 }
