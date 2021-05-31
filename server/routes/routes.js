@@ -4,20 +4,21 @@ const users = [
     name: '1234',
     email: '1234',
   },
-  {
-    id: 2,
-    name: 'Bertram Gilfoyle',
-    email: 'gilfoyle@piedpiper.com',
-  },
 ];
 
 const router = app => {
   app.get('/', (request, response) => {
-    response.send(response.send(users));
+    response.set('Access-Control-Allow-Origin', '*');
+    response.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
+    response.set('Access-Control-Allow-Headers', 'Content-Type');
+    response.send(users);
   });
   app.post('/login', (request, response) => {
-    console.log(request);
-    response.send(users);
+    response.set('Access-Control-Allow-Origin', '*');
+    response.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    response.set('Access-Control-Allow-Headers', 'Content-Type');
+    if (users.filter(el => el.name === request.body.login && el.email === request.body.password).length)
+      response.send(true);
   });
 };
 

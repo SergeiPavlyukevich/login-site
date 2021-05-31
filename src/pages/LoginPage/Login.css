@@ -1,0 +1,107 @@
+.loginWrapper {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+ .loginLeftMainImg {
+    width: 50%;
+    background-image: url(../../moreLogin.jpg);
+}
+
+.loginRightSite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0faf3;
+    width: 50%;
+}
+
+.loginBody {
+    width: 230px;
+    height: 130px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    background-color: white;
+}
+
+.formGroup {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formLabel {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+
+.formInput {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formInput:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+
+.formButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formButton:focus,
+.formButton:hover {
+    background-color: rgba(0, 113, 240, 0.7)
+}
+
+.formInput:focus ~ .formLabel,
+.formInput:not(:placeholder-shown) ~ .formLabel {
+    top: -18px;
+    font-size: 11px;
+    color: #e0e0e0
+}
+
+.underLogin {
+    font-size: 15px;
+    margin: 20px 0px 0px 0px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inscriptionUnderLogin {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
