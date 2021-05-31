@@ -87,6 +87,10 @@
     justify-content: space-between;
 }
 
+.inscriptionUnderLogin {
+    cursor: pointer;
+}
+
 .checkbox {
     display: flex;
     align-items: center;

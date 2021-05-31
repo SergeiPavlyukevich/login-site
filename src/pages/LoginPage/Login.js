@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useHistory} from "react-router-dom";
 
 import "./Login.css";
 
@@ -18,6 +19,8 @@ export default function Login() {
   const [login, setLogin] = useState();
   const [password, setPassword] = useState();
 
+  const history = useHistory();
+  
   return (
     <div className="loginWrapper">
       <div className="loginLeftMainImg" />
@@ -42,8 +45,8 @@ export default function Login() {
           </div>
         </div>
         <div className="underLogin">
-          <div>Lost your password?</div>
-          <div>Register</div>
+          <div className='inscriptionUnderLogin'>Lost your password?</div>
+          <div className='inscriptionUnderLogin' onClick={() => history.push('/registration')}>Register</div>
         </div>
       </div>
     </div>
